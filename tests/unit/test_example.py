@@ -18,3 +18,8 @@ def test_add_numbers():
     out = add_numbers(1, 2)
     expected_out = 3
     assert  out == expected_out, f"Expected {expected_out} but got {out}"
+
+def test_add_neg_numbers():
+    out = add_numbers(-1, -2)
+    expected_out = -3
+    assert  out == expected_out, f"Expected {expected_out} but got {out}"
