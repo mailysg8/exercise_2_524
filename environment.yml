@@ -1,0 +1,7 @@
+name: pytest1
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - hatch
+  - copier
