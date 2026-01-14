@@ -27,3 +27,5 @@ Add a docstring here for the init module.
 This might include a very brief description of the package,
 its purpose, and any important notes.
 """
+from pyos_pytest1.countchar.count_char import count_char
+__all__ = ['count_char']

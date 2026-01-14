@@ -2,7 +2,10 @@ def count_char(input_string):
     if not isinstance(input_string, str):
         raise TypeError(f"Expected the input to be of type str, got {type(input_string)}")
 
+    print('yes')
+
     count = 0
+    #breakpoint()
     for char in input_string:
         count += 1
     return count
