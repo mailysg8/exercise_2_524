@@ -1,0 +1,5 @@
+# count_char { #pytest1.count_char }
+
+```python
+count_char(input_string)
+```

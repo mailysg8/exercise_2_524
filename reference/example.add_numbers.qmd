@@ -1,0 +1,32 @@
+# example.add_numbers { #pytest1.example.add_numbers }
+
+```python
+example.add_numbers(a, b)
+```
+
+Add two numbers together and return the result.
+
+This is an example function with a numpy style docstring.
+We recommend using this style for consistency and readability.
+
+## Parameters {.doc-section .doc-section-parameters}
+
+| Name   | Type   | Description               | Default    |
+|--------|--------|---------------------------|------------|
+| a      | float  | The first number to add.  | _required_ |
+| b      | float  | The second number to add. | _required_ |
+
+## Returns {.doc-section .doc-section-returns}
+
+| Name   | Type   | Description                 |
+|--------|--------|-----------------------------|
+|        | float  | The sum of the two numbers. |
+
+## Examples {.doc-section .doc-section-examples}
+
+```python
+>>> add_numbers(3, 5)
+8
+>>> add_numbers(-2, 7)
+5
+```

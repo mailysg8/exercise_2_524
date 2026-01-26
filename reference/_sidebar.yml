@@ -3,8 +3,7 @@ website:
   - contents:
     - reference/index.qmd
     - contents:
-      - reference/get_object.qmd
-      - reference/preview.qmd
+      - reference/count_char.qmd
       section: Some functions
     id: reference
   - id: dummy-sidebar

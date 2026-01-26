@@ -1,6 +1,16 @@
 project:
   type: website
 
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Reference"
+        href: reference/index.qmd
+
 # tell quarto to read the generated sidebar
 metadata-files:
   - reference/_sidebar.yml
@@ -13,7 +23,7 @@ format:
 
 quartodoc:
   # the name used to import the package you want to create reference docs for
-  package: quartodoc
+  package: pyos_pytest1
 
   # write sidebar and style data
   sidebar: reference/_sidebar.yml
@@ -25,6 +35,5 @@ quartodoc:
       contents:
         # the functions being documented in the package.
         # you can refer to anything: class methods, modules, etc..
-        - get_object
-        - preview
-        - count_char.py
+        - count_char
+        - example.add_numbers
