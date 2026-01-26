@@ -5,6 +5,8 @@
 | Package | [![Latest PyPI Version](https://img.shields.io/pypi/v/pyos-pytest1.svg)](https://pypi.org/project/pyos-pytest1/) [![Supported Python Versions](https://img.shields.io/pypi/pyversions/pyos-pytest1.svg)](https://pypi.org/project/pyos-pytest1/)  |
 | Meta   | [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) |
 
+[![codecov](https://codecov.io/github/mailysg8/exercise_2_524/graph/badge.svg?token=2ARKCX16CS)](https://codecov.io/github/mailysg8/exercise_2_524)
+
 *TODO: the above badges that indicate python version and package version will only work if your package is on PyPI.
 If you don't plan to publish to PyPI, you can remove them.*
 
