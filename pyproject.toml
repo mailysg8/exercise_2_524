@@ -3,8 +3,8 @@
 ################################################################################
 
 [build-system]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
-requires = ["hatchling"]
 
 ################################################################################
 # Project Configuration
@@ -13,7 +13,7 @@ requires = ["hatchling"]
 [project]
 name = "pyos_pytest1"
 # You can chose to use dynamic versioning with hatch or static where you add it manually.
-version = "0.1.0"
+dynamic = ["version"]
 
 description = "example of pytest for dsci 524"
 authors = [
@@ -62,6 +62,7 @@ docs = [
 dev = [
     'ruff',
     'hatch',
+    'hatch-vcs',
 ]
 
 ################################################################################
@@ -80,7 +81,12 @@ only-packages = true
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyos_pytest1"]
 
+[tool.hatch.version]
+source = "vcs"
+raw-options = { version_scheme = "no-guess-dev", local_scheme = "no-local-version" }
 
+[tool.hatch.build.hooks.vcs]
+version-file = "src/pyos_pytest1/__version__.py"
 
 ######## Configure pytest for your test suite ########
 [tool.pytest.ini_options]
